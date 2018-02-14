@@ -12,7 +12,7 @@ public class AssumeIdentityAttributeTests
     }
 
     [Fact]
-    public static void CallingSecuredMethodWillThrow()
+    public static void DefeatVillian_NoIdentity_WillThrow()
     {
         Assert.Throws<SecurityException>(() => DefeatVillian());
     }
